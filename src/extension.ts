@@ -19,11 +19,11 @@ export function activate(context: vscode.ExtensionContext) {
         .update("enabled", !isEnabled, vscode.ConfigurationTarget.Global)
         .then(
           () => {
-            const message = `Bracket Pair Colorization is ${
+            /* const message = `Bracket Pair Colorization is ${
               !isEnabled ? "enabled" : "disabled"
             }`;
 
-            vscode.window.showInformationMessage(message);
+            vscode.window.showInformationMessage(message); */
           },
           () => {
             const message = `Error toggling Bracket Pair Colorization`;
